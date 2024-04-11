@@ -1,0 +1,27 @@
+[2024-04-11 10:48:58,751: INFO: config: PyTorch version 2.2.2 available.]
+[2024-04-11 10:48:59,174: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-11 10:48:59,190: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 10:48:59,199: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 10:48:59,200: INFO: common: created directory at: artifacts]
+[2024-04-11 10:48:59,201: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-11 10:48:59,202: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-04-11 10:48:59,332: INFO: data_ingestion: Extraction Compelete]
+[2024-04-11 10:48:59,333: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-11 10:48:59,333: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-04-11 10:48:59,336: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 10:48:59,336: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 10:48:59,340: INFO: common: created directory at: artifacts]
+[2024-04-11 10:48:59,341: INFO: common: created directory at: artifacts/data_validation]
+[2024-04-11 10:48:59,342: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-04-11 10:48:59,343: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-04-11 10:48:59,349: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 10:48:59,351: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 10:48:59,351: INFO: common: created directory at: artifacts]
+[2024-04-11 10:48:59,352: INFO: common: created directory at: artifacts/data_transformation]
+[2024-04-11 10:49:01,834: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]

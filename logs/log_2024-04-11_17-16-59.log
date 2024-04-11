@@ -1,0 +1,53 @@
+[2024-04-11 17:17:08,911: INFO: config: PyTorch version 2.2.2+cu121 available.]
+[2024-04-11 17:17:11,396: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-11 17:17:11,401: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 17:17:11,403: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 17:17:11,404: INFO: common: created directory at: artifacts]
+[2024-04-11 17:17:11,404: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-11 17:17:11,406: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-04-11 17:17:11,539: INFO: data_ingestion: Extraction Compelete]
+[2024-04-11 17:17:11,540: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-11 17:17:11,541: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-04-11 17:17:11,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 17:17:11,547: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 17:17:11,548: INFO: common: created directory at: artifacts]
+[2024-04-11 17:17:11,548: INFO: common: created directory at: artifacts/data_validation]
+[2024-04-11 17:17:11,551: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-04-11 17:17:11,552: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-04-11 17:17:11,555: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 17:17:11,558: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 17:17:11,560: INFO: common: created directory at: artifacts]
+[2024-04-11 17:17:11,560: INFO: common: created directory at: artifacts/data_transformation]
+[2024-04-11 17:17:12,874: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-04-11 17:17:12,875: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2024-04-11 17:17:12,878: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 17:17:12,880: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 17:17:12,881: INFO: common: created directory at: artifacts]
+[2024-04-11 17:17:12,882: INFO: common: created directory at: artifacts/model_trainer]
+[2024-04-11 17:20:10,271: ERROR: main: CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 0 bytes is free. Of the allocated memory 10.26 GiB is allocated by PyTorch, and 446.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)]
+Traceback (most recent call last):
+  File "main.py", line 47, in <module>
+    model_training.main()
+  File "c:\users\hites\onedrive\desktop\end to end ml project\text-summarization-nlp-project\src\textSummarizer\pipeline\model_trainer.py", line 10, in main
+    model_trainer_config.train()
+  File "c:\users\hites\onedrive\desktop\end to end ml project\text-summarization-nlp-project\src\textSummarizer\components\model_trainer.py", line 45, in train
+    trainer.train()
+  File "C:\Users\hites\OneDrive\Desktop\end to end ml project\Text-Summarization-NLP-Project\venv\lib\site-packages\transformers\trainer.py", line 1780, in train
+    return inner_training_loop(
+  File "C:\Users\hites\OneDrive\Desktop\end to end ml project\Text-Summarization-NLP-Project\venv\lib\site-packages\transformers\trainer.py", line 2118, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\hites\OneDrive\Desktop\end to end ml project\Text-Summarization-NLP-Project\venv\lib\site-packages\transformers\trainer.py", line 3045, in training_step
+    self.accelerator.backward(loss)
+  File "C:\Users\hites\OneDrive\Desktop\end to end ml project\Text-Summarization-NLP-Project\venv\lib\site-packages\accelerate\accelerator.py", line 2013, in backward
+    loss.backward(**kwargs)
+  File "C:\Users\hites\OneDrive\Desktop\end to end ml project\Text-Summarization-NLP-Project\venv\lib\site-packages\torch\_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "C:\Users\hites\OneDrive\Desktop\end to end ml project\Text-Summarization-NLP-Project\venv\lib\site-packages\torch\autograd\__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 0 bytes is free. Of the allocated memory 10.26 GiB is allocated by PyTorch, and 446.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

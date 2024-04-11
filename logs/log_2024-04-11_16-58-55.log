@@ -1,0 +1,32 @@
+[2024-04-11 16:58:59,449: INFO: config: PyTorch version 2.2.2 available.]
+[2024-04-11 16:59:02,269: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-11 16:59:02,274: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 16:59:02,280: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 16:59:02,281: INFO: common: created directory at: artifacts]
+[2024-04-11 16:59:02,282: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-11 16:59:02,282: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-04-11 16:59:02,433: INFO: data_ingestion: Extraction Compelete]
+[2024-04-11 16:59:02,434: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-11 16:59:02,434: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-04-11 16:59:02,438: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 16:59:02,442: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 16:59:02,443: INFO: common: created directory at: artifacts]
+[2024-04-11 16:59:02,443: INFO: common: created directory at: artifacts/data_validation]
+[2024-04-11 16:59:02,446: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-04-11 16:59:02,447: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-04-11 16:59:02,450: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 16:59:02,455: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 16:59:02,456: INFO: common: created directory at: artifacts]
+[2024-04-11 16:59:02,456: INFO: common: created directory at: artifacts/data_transformation]
+[2024-04-11 16:59:04,165: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-04-11 16:59:04,166: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2024-04-11 16:59:04,171: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 16:59:04,180: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 16:59:04,181: INFO: common: created directory at: artifacts]
+[2024-04-11 16:59:04,182: INFO: common: created directory at: artifacts/model_trainer]
