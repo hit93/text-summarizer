@@ -1,0 +1,36 @@
+[2024-04-11 23:25:48,795: INFO: config: PyTorch version 2.2.2+cu121 available.]
+[2024-04-11 23:25:51,789: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-11 23:25:51,800: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 23:25:51,803: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 23:25:51,804: INFO: common: created directory at: artifacts]
+[2024-04-11 23:25:51,804: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-11 23:25:51,805: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-04-11 23:25:51,978: INFO: data_ingestion: Extraction Compelete]
+[2024-04-11 23:25:51,978: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-11 23:25:51,979: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-04-11 23:25:51,983: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 23:25:51,987: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 23:25:51,988: INFO: common: created directory at: artifacts]
+[2024-04-11 23:25:51,988: INFO: common: created directory at: artifacts/data_validation]
+[2024-04-11 23:25:51,991: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-04-11 23:25:51,991: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-04-11 23:25:51,997: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 23:25:51,999: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 23:25:52,000: INFO: common: created directory at: artifacts]
+[2024-04-11 23:25:52,000: INFO: common: created directory at: artifacts/data_transformation]
+[2024-04-11 23:25:53,545: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-04-11 23:25:53,545: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-04-11 23:25:53,549: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-11 23:25:53,551: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-11 23:25:53,552: INFO: common: created directory at: artifacts]
+[2024-04-11 23:25:53,553: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-04-11 23:27:20,166: INFO: rouge_scorer: Using default tokenizer.]
+[2024-04-11 23:27:20,441: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
